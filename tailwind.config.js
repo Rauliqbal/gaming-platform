@@ -14,6 +14,9 @@ module.exports = {
          fontFamily: {
             poppins: ["poppins", "sans-serif"],
          },
+         backgroundImage: {
+            "about-img": "linear-gradient(to right bottom, rgba(0,0,0, 0.65), rgba(0,0,0, 0.55)),url('/src/image/bg-image.png')",
+         },
       },
    },
    plugins: [require("daisyui")],
