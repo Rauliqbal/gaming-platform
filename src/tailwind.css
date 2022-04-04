@@ -5,7 +5,7 @@
 
 @layer base {
    html {
-      @apply font-poppins transition-all ease-in-out;
+      @apply font-poppins;
    }
 }
 
@@ -13,6 +13,11 @@
    section {
       @apply py-20;
    }
+
+   .section-title {
+      @apply text-neutral-content  font-semibold md:text-3xl text-lg;
+   }
+
    .desc {
       @apply font-medium text-base leading-relaxed tracking-wide text-neutral-content;
    }
