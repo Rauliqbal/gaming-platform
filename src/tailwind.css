@@ -25,4 +25,8 @@
    .btn {
       @apply border-transparent;
    }
+
+   .icons {
+      @apply text-2xl  p-3 rounded-full bg-neutral-content;
+   }
 }
