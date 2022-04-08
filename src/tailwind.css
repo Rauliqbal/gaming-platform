@@ -27,6 +27,6 @@
    }
 
    .icons {
-      @apply text-2xl  p-3 rounded-full bg-neutral-content;
+      @apply text-2xl  p-3 rounded-full bg-neutral-content hover:bg-orange-300 transition-all duration-300 hover:text-neutral-content;
    }
 }
