@@ -8,6 +8,8 @@
 
       <!-- Tailwind CSS -->
       <link rel="stylesheet" href="./dist/style.css" />
+      <!-- Aos CSS -->
+      <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
       <!-- Boxicons -->
       <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
       <title>Gaming Platform - Web Design</title>
@@ -63,16 +65,16 @@
       <!-- END:Navbar -->
 
       <!-- START:Hero -->
-      <section class="container px-6 md:px-0">
-         <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 min-h-screen content-between">
-            <div class="">
+      <section class="container px-6 md:px-0 flex items-center min-h-screen">
+         <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 content-between">
+            <div class="col-span-1" data-aos="fade-down">
                <span class="font-bold text-orange-400 text-xl">3D Game Dev</span>
                <h1 class="text-neutral-content text-4xl md:text-5xl font-bold my-6">Work that we produce for our clients</h1>
                <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
                <a href="" class="btn bg-orange-400 hover:bg-orange-300 rounded-full text-neutral-content leading-6 border-transparent mt-8">Get more details</a>
             </div>
 
-            <div class="mx-auto">
+            <div class="mx-auto col-span-1" data-aos="fade-up">
                <img src="./src/image/joystik.svg" alt="" />
             </div>
          </div>
@@ -81,13 +83,13 @@
 
       <!-- START:Trending Games -->
       <section class="container px-6 md:px-0">
-         <div class="flex items-center justify-center md:justify-between">
+         <div class="flex items-center justify-center md:justify-between" data-aos="fade-up">
             <h3 class="text-xl text-center md:text-left md:text-3xl text-neutral-content font-bold tracking-wider">Currently Trending Games</h3>
 
             <a href="#" class="btn leading-none hidden lg:flex">SEE ALL</a>
          </div>
          <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 mt-14">
-            <div class="group">
+            <div class="group" data-aos="zoom-in">
                <div class="rounded-xl md:rounded-3xl overflow-hidden">
                   <img class="aspect-square group-hover:scale-110 transition-all duration-500 ease-in-out" src="./src/image/trend1.png" alt="" />
                </div>
@@ -96,7 +98,7 @@
                   <h4 class="font-medium text-sm md:text-2xl text-center text-neutral-content">40 Followers</h4>
                </div>
             </div>
-            <div class="group">
+            <div class="group" data-aos="zoom-in">
                <div class="rounded-xl md:rounded-3xl overflow-hidden">
                   <img class="aspect-square group-hover:scale-110 transition-all duration-500 ease-in-out" src="./src/image/trend2.png" alt="" />
                </div>
@@ -105,7 +107,7 @@
                   <h4 class="font-medium text-sm md:text-2xl text-center text-neutral-content">40 Followers</h4>
                </div>
             </div>
-            <div class="group">
+            <div class="group" data-aos="zoom-in">
                <div class="rounded-xl md:rounded-3xl overflow-hidden">
                   <img class="aspect-square group-hover:scale-110 transition-all duration-500 ease-in-out" src="./src/image/trend3.png" alt="" />
                </div>
@@ -114,7 +116,7 @@
                   <h4 class="font-medium text-sm md:text-2xl text-center text-neutral-content">40 Followers</h4>
                </div>
             </div>
-            <div class="group">
+            <div class="group" data-aos="zoom-in" data-aos-duration="900">
                <div class="rounded-xl md:rounded-3xl overflow-hidden">
                   <img class="aspect-square group-hover:scale-110 transition-all duration-500 ease-in-out" src="./src/image/trend4.png" alt="" />
                </div>
@@ -134,11 +136,13 @@
       <!-- START:Section About -->
       <section class="container px-6 md:px-0">
          <div class="flex justify-center items-center">
-            <h3 class="text-neutral-content text-center font-semibold text-xl md:text-4xl w-full md:w-[765px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+            <h3 class="text-neutral-content text-center font-semibold text-xl md:text-4xl w-full md:w-[765px]" data-aos="flip-right">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
          </div>
          <div class="mt-14">
-            <h3 class="section-title">Lorem Ipsum</h3>
-            <p class="desc mt-8 w-full md:w-[545px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            <div data-aos="fade-up">
+               <h3 class="section-title">Lorem Ipsum</h3>
+               <p class="desc mt-8 w-full md:w-[545px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
             <svg class="-mb-24 md:-mb-20 ml-auto md:mr-28" width="196" height="154" viewBox="0 0 196 154" fill="none" xmlns="http://www.w3.org/2000/svg">
                <circle cx="3.5" cy="3.5" r="3.5" fill="#DC7000" fill-opacity="0.35" />
                <circle cx="24.5" cy="3.5" r="3.5" fill="#DC7000" fill-opacity="0.35" />
@@ -231,7 +235,7 @@
                <circle cx="171.5" cy="150.5" r="3.5" fill="#DC7000" fill-opacity="0.35" />
                <circle cx="192.5" cy="150.5" r="3.5" fill="#DC7000" fill-opacity="0.35" />
             </svg>
-            <img class="rounded h-96 w-full md:h-auto md:w-auto object-cover" src="./src/image/about.png" alt="" />
+            <img class="rounded h-96 w-full md:h-auto md:w-auto object-cover" src="./src/image/about.png" alt="spiderman miles morales" data-aos="fade-down" " />
          </div>
       </section>
       <!-- END:Section About -->
@@ -240,49 +244,49 @@
       <section class="bg-about-img">
          <div class="container px-6 md:px-0">
             <div class="flex justify-center items-center">
-               <div class="w-full md:w-[820px]">
+               <div class="w-full md:w-[820px]" data-aos="flip-right">
                   <h4 class="section-title text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
                   <p class="desc mt-6 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                </div>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 mt-20 gap-20">
-               <div class="flex flex-col items-center">
+               <div class="flex flex-col items-center" data-aos="zoom-in">
                   <div class="bg-neutral-content rounded-full w-20 h-20">
                      <img class="p-5 w-20 h-20" src="./src/image/mobile.svg" alt="" />
                   </div>
                   <h6 class="text-base md:text-lg text-neutral-content text-center mt-8">Mobile Game Development</h6>
                </div>
 
-               <div class="flex flex-col items-center">
+               <div class="flex flex-col items-center" data-aos="zoom-in">
                   <div class="bg-neutral-content rounded-full w-20 h-20">
                      <img class="p-5 w-20 h-20" src="./src/image/pc.svg" alt="" />
                   </div>
                   <h6 class="text-base md:text-lg text-neutral-content text-center mt-8">PC Game Development</h6>
                </div>
 
-               <div class="flex flex-col items-center">
+               <div class="flex flex-col items-center" data-aos="zoom-in">
                   <div class="bg-neutral-content rounded-full w-20 h-20">
                      <img class="p-5 w-20 h-20" src="./src/image/ps4.svg" alt="" />
                   </div>
                   <h6 class="text-base md:text-lg text-neutral-content text-center mt-8">PS4 Game Development</h6>
                </div>
 
-               <div class="flex flex-col items-center">
+               <div class="flex flex-col items-center" data-aos="zoom-in">
                   <div class="bg-neutral-content rounded-full w-20 h-20">
                      <img class="p-5 w-20 h-20" src="./src/image/vr.svg" alt="" />
                   </div>
                   <h6 class="text-base md:text-lg text-neutral-content text-center mt-8">AR/VR Solutions</h6>
                </div>
 
-               <div class="flex flex-col items-center md:col-start-2 md:col-end-2">
+               <div class="flex flex-col items-center md:col-start-2 md:col-end-2" data-aos="zoom-in">
                   <div class="bg-neutral-content rounded-full w-20 h-20">
                      <img class="p-5 w-20 h-20" src="./src/image/ar.svg" alt="" />
                   </div>
                   <h6 class="text-base md:text-lg text-neutral-content text-center mt-8">AR/VR Design</h6>
                </div>
 
-               <div class="flex flex-col items-center">
+               <div class="flex flex-col items-center" data-aos="zoom-in">
                   <div class="bg-neutral-content rounded-full w-20 h-20">
                      <img class="p-5 w-20 h-20" src="./src/image/3Dmodel.svg" alt="" />
                   </div>
@@ -296,34 +300,34 @@
       <!-- START: Section Projects -->
       <section class="container px-6 md:px-0">
          <div class="flex items-center justify-center">
-            <div class="w-full md:w-[497px]">
+            <div class="w-full md:w-[497px]" data-aos="fade-up">
                <h4 class="section-title text-center">Our Recent Projects</h4>
                <p class="desc mt-6 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
          </div>
 
          <div class="grid grid-cols-1 md:grid-cols-9 gap-8 mt-20">
-            <div class="overflow-hidden md:col-span-3 object-cover rounded-2xl h-auto md:h-[174px] lg:h-[223px] group">
+            <div class="overflow-hidden md:col-span-3 object-cover rounded-2xl h-auto md:h-[174px] lg:h-[223px] group" data-aos="zoom-in">
                <img class="group-hover:scale-105 transition-all duration-500 ease-in-out" src="./src/image/projects1.png" alt="" />
             </div>
 
-            <div class="overflow-hidden md:col-span-3 object-cover rounded-2xl h-auto md:h-[174px] lg:h-[223px] group">
+            <div class="overflow-hidden md:col-span-3 object-cover rounded-2xl h-auto md:h-[174px] lg:h-[223px] group" data-aos="zoom-in">
                <img class="group-hover:scale-105 transition-all duration-500 ease-in-out" src="./src/image/projects2.png" alt="" />
             </div>
 
-            <div class="overflow-hidden md:col-span-3 object-cover rounded-2xl h-auto md:h-[174px] lg:h-[223px] group">
+            <div class="overflow-hidden md:col-span-3 object-cover rounded-2xl h-auto md:h-[174px] lg:h-[223px] group" data-aos="zoom-in">
                <img class="group-hover:scale-105 transition-all duration-500 ease-in-out" src="./src/image/projects3.png" alt="" />
             </div>
 
-            <div class="overflow-hidden md:col-span-2 object-cover rounded-2xl h-auto md:h-[174px] lg:h-[223px] group">
+            <div class="overflow-hidden md:col-span-2 object-cover rounded-2xl h-auto md:h-[174px] lg:h-[223px] group" data-aos="zoom-in">
                <img class="group-hover:scale-105 transition-all duration-500 ease-in-out" src="./src/image/projects4.png" alt="" />
             </div>
 
-            <div class="overflow-hidden md:col-span-3 object-cover rounded-2xl h-auto md:h-[174px] lg:h-[223px] group">
+            <div class="overflow-hidden md:col-span-3 object-cover rounded-2xl h-auto md:h-[174px] lg:h-[223px] group" data-aos="zoom-in">
                <img class="group-hover:scale-105 transition-all duration-500 ease-in-out" src="./src/image/projects5.png" alt="" />
             </div>
 
-            <div class="overflow-hidden md:col-span-4 object-cover rounded-2xl h-auto md:h-[174px] lg:h-[223px] group">
+            <div class="overflow-hidden md:col-span-4 object-cover rounded-2xl h-auto md:h-[174px] lg:h-[223px] group" data-aos="zoom-in">
                <img class="group-hover:scale-105 transition-all duration-500 ease-in-out" src="./src/image/projects6.png" alt="" />
             </div>
          </div>
@@ -338,13 +342,13 @@
       <!-- START:Section Subscribe -->
       <section class="container px-6 md:px-0">
          <div class="flex">
-            <div class="w-full md:w-[497px]">
+            <div class="w-full md:w-[497px]" data-aos="fade-up">
                <h4 class="section-title">Lorem Ipsum</h4>
                <p class="desc mt-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
          </div>
          <div class="rounded-2xl bg-[#2e2c2c80] mt-20">
-            <div class="grid lg:grid-cols-2 items-center justify-center md:gap-0 lg:gap-24 px-[4%]">
+            <div class="grid lg:grid-cols-2 items-center justify-center md:gap-0 lg:gap-24 px-[4%]" data-aos="fade-down">
                <div class="col-span-1 py-5 lg:py-8">
                   <h5 class="section-title">Stay in the loop</h5>
                   <p class="desc mt-3">Subscribe to receive the latest news and updates about TDA. We promise not to spam you!</p>
@@ -419,5 +423,13 @@
          <h5 class="text-neutral-content text-base text-center py-7">Copyright ® 2021 Lorem All rights Rcerved</h5>
       </footer>
       <!-- END:Section Footer -->
+
+      <!-- Javascript -->
+      <script src="./node_modules/aos/dist/aos.js"></script>
+      <script>
+         AOS.init({
+            duration: 750,
+         });
+      </script>
    </body>
 </html>
